@@ -23,7 +23,10 @@ const LongButton: FC<LongButtonProps> = (props) => {
 
   return (
     <div className={classes.root}>
-      <Button style={{ backgroundColor: props.backgroundColor }}>
+      <Button
+        style={{ backgroundColor: props.backgroundColor }}
+        onClick={props.onClick}
+      >
         {props.children}
       </Button>
     </div>
